@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj=new Object();
+    obj.name = "David";
+   // alert(obj.name);
+    delete obj.name;
+   // alert(obj.name);
+</script>
+<script>
+    //遍历对象，取出属性名字
+    var o ={"name":'aa',"age":13}
+    for(var p in o){//只能打印自有属性，不能打印继承属性
+        console.log(p);
+        //console.log( o.p  )p是写死的
+        console.log(p+':'+o[p]);
+        //o[p]得到属性的值
+    }
+
+</script>
+</body>
+</html>

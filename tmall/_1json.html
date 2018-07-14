@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        <ul id="list">
+
+        </ul>
+        <script>
+            var obj={
+                name:"dx",
+                age:"20",
+                school:"linda"
+            }
+            var testJson = JSON.stringify(obj);
+            console.log(testJson);
+            console.log(JSON.parse(testJson));
+
+
+            var arr=["aa","bb","cc","dd","ee"];
+            var oList=document.getElementById("list");
+            var htmlInner=" ";
+            for( var i=0;i<arr.length;i++) {
+                htmlInner+="<li>"+arr[i]+"</li>";
+            }
+            console.log(htmlInner);
+            oList.innerHTML = htmlInner;
+        </script>
+    </div>
+</body>
+</html>

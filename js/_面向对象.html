@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*test(); //写在前后都可以，函数声明会被浏览器提前，
+    //先检查是否有函数声明的
+    function test(){
+        alert('haha');
+    }*/
+    //函数表达式
+    /*var test = function(){//对象数据类型
+        alert('hhhh');
+    }
+    test();*/
+    //函数式编程
+    //将函数当成对象，可以赋值给变量，也可以传参给其它函数
+    /*setInterval(function(){
+
+    },1000);*/
+  /*  function a(b){
+        b();//调用b
+    }
+    a(function(){
+        alert("hh");
+    });*/
+ /*   function a(b){
+        b();
+    }
+    a(function(){//b是参数,需要调用
+        alert('haha');
+    });*/
+/*    function a(b){
+        b(function(){
+            alert('hhhhh');
+        });
+    }
+    a(function(c){  //b的函数形参传给了c
+        c();//想执行alert,c需要调用
+    });*/
+    /*function a(b){
+        b(function(d){
+            d();
+        });
+    }
+    a(function(c){
+        c(function(){
+            alert('hehehehe')
+        });
+    });*/
+  /*  function a(){
+        return function(string){
+            alert(string);
+        };
+    }
+    var b = a();
+    b('huhuhu');*/
+    function a(){
+        return function(string){
+            alert(string);
+        };
+    }
+    a()('aaaaa');//传参
+
+
+</script>
+</body>
+</html>
