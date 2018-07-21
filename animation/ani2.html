@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .p1{
+            height: 100px;
+            width: 100px;
+            border:1px dashed #333333;
+            perspective: 1000px;
+        }
+        .p2{
+            height: 100px;
+            width: 100px;
+            background: red ;
+            transform-style: preserve-3d;
+            transformY: rotate(180deg) ;
+
+        }
+        .p3{
+            height: 100px;
+            width: 100px;
+            background: blue;
+            transformY: rotate(-180deg) ;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="p1">
+        <div class="p2">
+            1233
+            <div class="p3">
+                3455
+            </div>
+        </div>
+    </div>
+</body>
+</html>
