@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: #343636;
+        }
+        li{
+            list-style: none;
+        }
+        .contains{
+            width:750px;
+            margin:0 auto;
+        }
+        .h-date{
+            background: #fff;
+            color:#000;
+            font-size: 30px;
+            height:94px;
+            line-height: 94px;
+            text-indent:20px;     /*??????*/
+        }
+        .contains .empty{
+            background: #fff;
+        }
+        .contains .selected{
+            background: red;
+        }
+        .contains .sold{
+            background: blue;
+        }
+        .h-sign{
+            padding:20px;
+            border-bottom：1px solid #555;
+        }
+        .h-sign span{
+            display:inline-block;
+            height: 35px;
+            width: 45px;
+            line-height:35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contains">
+        <div class="header">
+            <div class="h-date">
+                今天1月6日
+            </div>
+            <div class="h-sign">
+                <span class="empty"></span>
+                <span>可选</span>
+                <span class="selected"></span>
+                <span>已选</span>
+                <span class="sold"></span>
+                <span>已售</span>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="clearfix">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="s-bar">
+            <div class="text">
+                <span>已选作为</span>
+                <span>最多可选5个座位</span>
+            </div>
+            <div class="adds">
+                <ul class="clearfix">
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer clearfix">
+            <div class="f-left">
+                <span>合计：</span>
+                <span>￥99</span>
+                <span>￥99*1</span>
+            </div>
+            <div class="f-right">
+                确认选座
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

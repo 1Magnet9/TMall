@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            height:100px;
+            width: 100px;
+            background :red;
+        }
+    </style>
+</head>
+<body>
+    <button id="a1">1111111</button>
+    <button id="a2">2222222</button>
+
+    <button id="a3">333333</button>
+    <button id="a4">444444</button>
+
+    <button id="a5">55555</button> <button class="stop">aaaaaa</button>
+    <div class="box"></div>
+
+    <script src="../jss/jquery-3.3.1.js"></script>
+    <script>
+        $("#a1").on("click",function(){
+            // $(".box").hide();
+
+        })
+        $("#a2").on("click",function(){
+            $(".box").show();
+        })
+        $("#a3").on("click",function(){
+            $(".box").fadeToggle();
+        })
+        $("#a4").on("click",function(){
+            $(".box").slideToggle();
+        })
+        $("#a5").on("click",function(){
+            $(".box").animate({
+                width:400,
+                height:500
+            },1000,"swing",function(){
+                console.log("aa");
+            })
+
+        })
+        $(".stop").stop();
+    </script>
+</body>
+</html>

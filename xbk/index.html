@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="da">
+            <div class="left">
+                <div class="head">
+                    <div class="logo"><img src="https://www.starbucks.com.cn/assets/images/logo.svg"></div>
+                    <div>
+                        <ul class="nav-head">
+                            <li class="store"><a>门店</a>  </li>
+                            <li><a>我的账户</a></li>
+                            <li><a class="iconfont icon-edit">菜单</a></li>
+                            <li><img src="https://www.starbucks.com.cn/assets/icons/icon-hamburger.svg"></li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="f-cen">
+                            <div class="text">
+                                <span> 心情惬意，来杯咖啡吧 ☕</span>
+                            </div>
+                            <div class="footer">
+                                <ul>
+                                    <li><img src="https://www.starbucks.com.cn/assets/icons/icon-account.svg"></li>
+                                    <li class="dl">登录</li>
+                                    <li class="zc"><span>注册</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="overlay active">
+                <div class="container">
+                    <div class="header">
+                        <a>
+                            <img scr="https://www.starbucks.com.cn/assets/images/logo.svg">
+                            <button class="icon close"></button>
+                        </a>
+                    </div>
+                    <div class="body"></div>
+                    <div class="footer"></div>
+                </div>
+            </div>-->
+        </div>
+
+      <!--  <div class="right">
+                <div class="box">
+                    <div class="slider-panner sp-1 active">
+                        <img src="https://www.starbucks.com.cn/assets/images/featured/2018summer3/kv-bev.jpg" alt="">
+                    </div>
+                    <div class="slider-panner sp-2">
+                        <img src="https://www.starbucks.com.cn/assets/images/featured/2018summer3/kv-mooncake.jpg" alt="">
+                    </div>
+                    <div class="slider-panner sp-3">
+                        <img src="https://www.starbucks.com.cn/assets/images/featured/2018summer3/fp-cold-foam.jpg" alt="">
+                    </div>
+                </div>
+        </div>-->
+    </div>
+    <script>
+        var aSP = document.querySelectorAll(".slider-panner")
+        var index = 0;
+        setInterval(function(){
+            aSP[index].classList.remove("active");
+            console.log(index);
+            if(index==2){
+                index=-1;
+            }
+            aSP[++index].classList.add("active");
+        },1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class='slider'>
+        <div class="slider-panner sp-1 active">
+            <div>
+                <img src="'+newOption.pic[0]+'" alt="">
+            </div>
+        </div>
+        <div class="slider-panner sp-2">
+            <div>
+                <img src="'+newOption.pic[1]+'" alt="">
+            </div>
+        </div>
+        <div class="slider-panner sp-3">
+            <div>
+                <img src="'+newOption.pic[2]+'" alt="">
+            </div>
+    </div>
+        <div class="list-btn">
+            <ul>
+            <li class="active"></li>
+                <li></li><li></li>
+            </ul>
+        </div>
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+<script>
+    var thisIndex=0;
+    isrun = true;
+    setInterval(function(){
+        if(isrun){
+            ++thisIndex;
+            run()
+        }
+    },newOption.timer);
+    function run(){
+        if(thisIndex>=3){
+            thisIndex = 0;
+        }
+        $(".slider-panner").eq(thisIndex).addClass("active").siblings().removeClass("active");
+        $(".list-btn li").eq(thisIndex).addClass("active").siblings().removeClass("active");
+    }
+    $(".slider").hover(function(){
+        isrun=false;
+    },function(){
+        isrun=true;
+    })
+    $(".list-btn li").on("mouseover",function(){
+        thisIndex = $(this).index();
+        run();
+    })
+</script>
+</body>
+</html>

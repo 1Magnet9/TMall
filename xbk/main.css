@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 100%;
+    height:100%;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+/**/
+.left{
+    background: white;
+    width:30%;
+    height:100%;
+    position:fixed;
+}
+.head{
+    height: 100px;
+    padding:24px;
+    position:relative;
+}
+.right{
+    /*background: indianred;*/
+    position:relative;
+    height:400px;
+    float:right;
+}
+.nav .left li{
+    float:left;
+    font-size:20px;
+    padding:5px 10px 5px;
+    font-weight: 500;
+    position:relative;
+}
+.logo{
+    float:left;
+}
+.da{
+
+}
+.overlay .active{
+    overflow-y: scroll;
+}
+.nav-head{
+    float:left;
+    font-size:14px;
+    font-weight: 200;
+}
+/*.first{
+    overflow:hidden;
+}*/
+.body{
+    padding-left: 90px;
+    padding-right: 24px;
+    vertical-align: middle;
+    height:100%;
+  /*  height:calc(100% - 70px);
+    line-height:calc(100% - 70px);*/
+}
+
+.text{
+    font-size: 31px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.dl{
+    margin-left:-7px;
+    color:#00A862;
+}
+.zc{
+    border:1px solid #00A862;
+    border-radius: 48px;
+    color:#00A862;
+    position:relative;
+    margin: 0 0 0  10px;
+}
+.rr{
+    background: #ff0000;
+    position:relative;
+    height:100%;
+    width: 70%;
+    float:right;
+}
+.bd{
+    margin:0 auto;
+
+}
+/**/
+.box{
+    width:900px;
+    position:relative;
+    overflow: hidden;
+    height:400px ;
+}
+.slider-panner{
+    position: absolute;
+    width: 1000px;
+    height:500px;
+    transition: all 5s ease;
+    opacity: 0;
+}
+.slider-panner div{
+    width: 1230px;
+    margin:0 auto;
+}
+
+.active{
+    z-index: 2;
+    opacity: 1;
+}
+/**/
+
