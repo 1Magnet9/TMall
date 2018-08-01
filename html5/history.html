@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #p1{
+            background: #FFF38F;
+            height: 400px;
+            margin-bottom: 200px;
+        }
+        #p2{
+            background: #aaaaaa;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <a id="a1"></a>
+    <a id="a2"></a>
+    <div id="p1"></div>
+    <div id="p2"></div>
+
+    <span id="num"></span>
+    <br/>
+    <button id="btn">button</button>
+    
+    <script>
+        var a1=document.getElementById("a1");
+        var a2=document.getElementById("a2");
+        var p1=document.getElementById("p1");
+        var p2=document.getElementById("p2");
+        var obj={};
+        a1.onclick = function () {
+
+        }
+        
+
+    </script>
+    <script>
+        var obtn = document.getElementById("btn");
+        var num = document.getElementById("num");
+        var obj={};
+        obtn.onclick = function () {
+            var arr=[];
+            for(var i = 0;i<5;i++){
+                arr.push(Math.ceil(Math.random()*10));
+            }
+            num.innerText = arr;
+
+            var  rad = Math.random();
+            console.log(rad);
+            obj[rad] = arr;
+            history.pushState(rad,"");
+
+        }
+        window.onpopstate = function (e) {
+            console.log(obj[e.state]);
+        }
+    </script>
+</body>
+</html>

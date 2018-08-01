@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #can{
+            background: #000;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+        }
+    </style>
+    </head>
+    <body>
+    <canvas id="can"></canvas>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        var oCan = document.getElementById("can");
+        var can = oCan.getContext("2d");9
+        can.addEventListener('click',function (e) {
+            getEventPosition(e);
+        },false);
+
+        can.beginPath();
+        can.moveTo(100, 150);
+        can.lineTo(350, 50);
+        can.strokeStyle="red";
+        //can.lineWidth="10"
+        can.stroke();
+        can.beginPath();
+
+        can.strokeStyle="blue";
+
+        can.lineWidth="10"
+        can.stroke();
+
+        function getEventPosition(ev) {
+            var x,y;
+            if(ev.layerX||ev.layerY==0){
+                x=ev.layerX;
+                y=ev.layerY;
+            }else if(ev.offsetX||ev.offsetY==0){
+                x=ev.offsetX;
+                y=ev.offsetY;
+            }
+
+            return (x:x,y:y);
+        }
+
+        
+    </script>
+    </body>
+    </html>

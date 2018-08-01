@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var timer = new Date();
+        timer.setDate( timer.getDate() +10);
+        document.cookie = "school=linda;expires="+timer.toUTCString();
+        console.log(document.cookie);
+
+        function setCookie(key,value,expires){
+            document.cookie = "a=b;expires="+timer.toUTCString();
+        }
+        function getCookie(key){
+            var x=document.cookie;
+            console.log(x);
+
+        }
+        function delCookie(key){
+
+
+        }
+        var str = "a=b=c"
+        console.log(str.split("="));
+        var arr=str.split("=");
+        setCookie(arr[0],arr[1],arr[2]);
+        delCookie(arr[0]);
+
+
+
+
+
+</script>
+</body>
+</html>

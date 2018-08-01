@@ -209,22 +209,22 @@ a{
 .part3{
     background: #fff;
     width: 100%;
+
+    display:table;
 }
 .part3 h2{
     margin-bottom: 18px;
 }
 .part3 p{
-    display:block;
-
     margin-bottom: 24px;
     color:rgba(0, 0, 0, 0.56);
     font-size: 18px;
-
 }
 .part3 .middle{
     padding: 24px;
     margin:45px;
-    display: table;
+
+
 }
 .part3 .ll{
     float:left;
@@ -252,12 +252,12 @@ a{
 
 
 
-.center{
+.part5{
     overflow:hidden;
     width: 100%;
     display: block;
 }
-.center .coffeehouse{
+.part5 .coffeehouse{
     padding:36px;
     height: 100%;
 }
@@ -265,12 +265,12 @@ a{
 
 }
 
-.center li{
+.part5 li{
 
 
 
 }
-.center li img{
+.part5 li img{
     margin: 20px;
     white-space: nowrap;
     float:left;
