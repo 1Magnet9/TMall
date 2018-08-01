@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str ="hello world";
+    var str1 = "ello";
+    var str2 ="rld";
+    var c,d;
+    c=str.indexOf(str1);
+    d=str.indexOf(str2);
+    for(var i =0;i<str1.length;i++){
+        if(str[i]!=str1[i]){
+            console.log(false);
+            break;
+        }
+    }
+    if(i>=str1.length) console.log(true);
+    for(var j=d;j<str.length;j++){
+        if(str[j]!=str2[j]){
+            console.log(false);
+            break;
+        }
+    }
+    if(j>=str.length) console.log(true);
+
+    // console.log(c);
+    // console.log(str.indexOf(str2));
+
+
+</script>
+</body>
+</html>
