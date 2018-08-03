@@ -18,22 +18,24 @@
             }, 'json');
         }, 'json');
     }, 'json'); */
-    function getPromise(url) {
-        return new Promise(function (resolve, reject) {
-            $.get(url, {}, function (res) {
-                resolve(res);
-            });
-        });
-    }
-    getPromise('a.json').then(function(resa){
-        console.log(resa);
-        return getPromise('b.json');
-    }).then(function(resb){
-        console.log(resb);
-        return getPromise('c.json');
-    }).then(function(resc){
-        console.log(resc);
-    });
+
+
+    // function getPromise(url) {
+    //     return new Promise(function (resolve, reject) {
+    //         $.get(url, {}, function (res) {
+    //             resolve(res);
+    //         });
+    //     });
+    // }
+    // getPromise('a.json').then(function(resa){
+    //     console.log(resa);
+    //     return getPromise('b.json');
+    // }).then(function(resb){
+    //     console.log(resb);
+    //     return getPromise('c.json');
+    // }).then(function(resc){
+    //     console.log(resc);
+    // });
     /* let p1 = new Promise(function (resolve, reject) {
         setTimeout(() => {
             console.log(1);
