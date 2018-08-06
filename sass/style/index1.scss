@@ -1,0 +1,40 @@
+$width:30px;
+$color:red;
+.div1{
+  background: {
+    color:$color;
+    repeat: no-repeat;
+    image:url("xx.jpg");
+  };
+  border:{
+    left:{
+      color: $color;
+      width: $width;
+    }
+    right:{
+      color: #fff;
+      width: 20px;
+    }
+  }
+}
+
+@mixin mx($wi,$he:100px){
+  width: $wi;
+  height: $he;
+}
+.div2{
+  @include mx(100px,100px);
+}
+.div3{
+  @extend .div1;
+  color:#fff;
+  height: 200-100px;
+  width: 100*10px;
+}
+.div4{
+  @extend .div1;
+  width:(100/2)px;
+  height:(100px)/2;
+  font-size: 100px/(100px);
+}
+@import "base";

@@ -2,8 +2,38 @@
 */
 //单行注释
 /*!强制注释*/
+$width:30px;
+$color1:red;
+
 $color:#ff0;
 $name:width;
+
+//.div13{
+//  width:$width;
+//  color:$color1;
+//}
+//.div14{
+//  color:$color;
+//  .box1{
+//    color:$color1;
+//    .box2{
+//      width:$width;
+//    }
+//  }
+//  &:hover{
+//    color:yellow;
+//  }
+//  &-box3{
+//    font-size: 20px;
+//  }
+//}
+
+
+
+
+
+
+
 #obox{
   #{$name}:1px
 }
@@ -52,6 +82,8 @@ $name:width;
 .div6{
   @include mx(1000px,2000px)
 }
+
+
 @import "base";
 
 .div7{
